@@ -1,0 +1,14 @@
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.25rem 0;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+}
+
+.fixed-top {
+  z-index: 1030;
+}

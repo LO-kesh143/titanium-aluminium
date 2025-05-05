@@ -1,0 +1,172 @@
+<div style="padding-top: 40px;">
+    <div class="container py-5">
+        <!-- Page Heading -->
+        <h2 class="text-center mb-4 text-primary">Contact Us</h2>
+
+        <!-- Section: Contact Form -->
+
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <h4 class="mb-4">Have a Question or Need Assistance?</h4>
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" formControlName="name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" formControlName="email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" formControlName="phone">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" formControlName="subject">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" formControlName="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Section 1: Business Details and Location -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h4 class="mb-3">Business Details:</h4>
+                <p><strong>Company Name:</strong> Titanium Aluminium</p>
+                <p><strong>Business Type:</strong> Aluminium Fabrication & Installation</p>
+                <p><strong>Location:</strong> Opposite Chamunda Dairy, Near MDS School,</p>
+                <p>Dhikli Road, Old RTO, Pratapnagar,</p>
+                <p>Udaipur, Rajasthan - 313001</p>
+                <p><strong>Contact Number:</strong> +91-7073846416</p>
+                <p><strong>Email:</strong> <a href="mailto:info@titaniumaluminium.com">
+                        info&#64;titaniumaluminium.com</a></p>
+                <p><strong>Website:</strong> <a href="https://www.titaniumaluminium.com" target="_blank">
+                        www.titaniumaluminiumudaipur.com</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h4 class="mb-1">Working Hours</h4>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10:00 AM - 4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Section 2: Working Hours -->
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d410.3607010593467!2d73.7546642!3d24.5993169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e60c9018478d%3A0x1593460c20581721!2s22%2C%20Dhikli%20Rd%2C%20UIT%20Colony%2C%20Pratap%20Nagar%2C%20Udaipur%2C%20Rajasthan%20313001!5e1!3m2!1sen!2sin!4v1746349830500!5m2!1sen!2sin"
+                        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Frequently Asked Questions (FAQ) -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="mb-3">Frequently Asked Questions</h4>
+                <div class="accordion" id="faqAccordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What types of materials do you work with?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                We specialize in aluminium and glass materials, offering a variety of customisation
+                                options.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How long does installation take?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                Installation times vary depending on the project size, but most installations are
+                                completed within 1-2 days.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you offer after-sale services?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                Yes, we provide maintenance and repair services after installation, ensuring
+                                long-lasting performance.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
